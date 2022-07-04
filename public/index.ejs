@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-stone-800">
+  <div class="w-screen h-screen flex">
+  	<div class="w-full h-full flex items-center justify-center">
+  		<div class="grid gap-[1px] grid-cols-[repeat(16,_minmax(0,_1fr))] [&>*]:w-5 [&>*]:h-5 [&>*]:bg-stone-700 rounded overflow-hidden scale-[2]">
+        <% pixels.forEach(function(_x, x){ %>
+          <% _x.forEach(function(_y, y){ %>
+            <div data-x="<%= x %>" data-y="<%= y %>"></div>
+          <% }); %>
+        <% }); %>
+			</div>
+  	</div>
+		<div class="w-[22rem] h-full p-8">
+			<div class="players rounded overflow-hidden text-sm [&>*]:w-full [&>*]:font-medium [&>*]:p-2 [&>*]:border-b [&>*]:border-black [&>*]:border-opacity-10">
+        <% players.forEach(function(player){ %>
+          <div style="background-color: <%= player.color %>"><%= player.user %></div>
+        <% }); %>
+			</div>
+		</div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+</html>
