@@ -2,6 +2,8 @@
 
 Used for the [NodeSchool Rotterdam meetup](https://www.meetup.com/nodeschool-rotterdam/events/285991530/)
 
+**PRESENTATION**: [nodeschool reboot.pdf](https://github.com/davidvanleeuwen/nodeschool-pixelflut/files/9053667/nodeschool.reboot.pdf)
+
 ### Getting started
 
 To try this out at home, please run the server by using first:
@@ -22,6 +24,7 @@ There are four requests you can do:
 
 ### Result
 
-
 https://user-images.githubusercontent.com/238946/177520911-60939956-3e59-4c83-ae46-ed754fb669ea.mp4
+
+https://user-images.githubusercontent.com/238946/177522320-02467222-114f-4731-a04b-1b16e4318851.mov
 
